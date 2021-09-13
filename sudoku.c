@@ -145,11 +145,15 @@ bool validate()
            printf("\nAll the empty fileds are to be filled before validation\n");
             return false;
          }
-           
-         else
-           {
+      }
+  }
+  for (int r = 0; r < 9; r++)
+  {
+      int sum=0;
+      for (int c = 0; c< 9; c++) 
+      {
+         
              sum+=arr[r][c]; // calculating sum of each row
-           }
       }
       
        // if sum is not 45 so must be a repeating value somewhere
